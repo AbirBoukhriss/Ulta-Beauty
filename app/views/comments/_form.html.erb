@@ -1,0 +1,17 @@
+<%= form_with model: [@article, @comment], url: article_comment_path(@article, @comment) do |form| %>
+  <div>
+    <%= form.label :commenter %><br>
+    <%= form.text_field :commenter %>
+  </div>
+  <div>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+  <div>
+  <%= form.label :status %><br>
+  <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+</div>
+<% end %>

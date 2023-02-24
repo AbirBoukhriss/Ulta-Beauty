@@ -1,0 +1,17 @@
+<h1>comments</h1>
+Our blog has <%= Comment.public_count %> comments and counting!
+
+
+<ul>
+  <% @comments.each do |comment| %>
+    <% unless comment.archived? %>
+        <li>
+        <% @comments.each do |comment| %>
+                <%= link_to comment.commenter, article_comment_path(@article, comment) %>
+            </li>
+            <% end %>
+    <% end %>
+<% end %>
+</ul>
+
+<%= link_to "New comment", new_article_comment_path %>
