@@ -5,7 +5,10 @@ Rails.application.routes.draw do
 
   resources :articles do
     resources :comments
-  end
+  end    
+  
+  resources :products
+
   namespace :api do
     namespace :v1 do
   resources :articles

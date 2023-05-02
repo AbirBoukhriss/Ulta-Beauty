@@ -1,42 +1,119 @@
-
   <div  class="bg-black h-48 text-white text-center py-20">
-  <p class="text-4xl"><b>SEPHORA COLLECTION</b></p>
+  <p class="text-4xl"><b>ABIIROSE</b></p>
   </div>
-  <header class="flex ">
-  <div >
-     <button>
-       <svg  class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-       <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-       </svg>
-    </button>
+<header class="flex ">
+  <div class="flex-1 w-64 pl-96 ">
+    <ul class="text-red-300 flex">
+ 
+     <li class="p-2 flex items-center"><i class="material-icons">Acceuil</i> </li>
+      <li class="p-2 flex items-center"><i class="material-icons">Nos Produits</i><li>
+      <li class="p-2 flex items-center"><i class="material-icons">Nos Gammes</i></li>
+      <li class="p-2 flex items-center"><i class="material-icons">Type de soin</i></li>
+      <li class="p-2 flex items-center"><i class="material-icons">Nos Offres</i> </li>
+    </ul>
   </div>
-  <div>
-  <button>
-    <svg  class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-    </svg>
-
-
-  
-  </button>
-  </div>
-  </header>
-
-
-
-<h1>Articles</h1>
-Our blog has <%= Article.public_count %> articles and counting!
-<div>
-
-<button class="bg-slate-300" >
+     <button class="bg-slate-300" >
     <%= link_to "New Article", new_article_path %>
   </button>
+
+
+
   </div>
   <button class="bg-slate-300 p-3.5 decoration-black py-px decoration-auto inline-block text-base cursor-pointer rounded-3xl">
  <%= link_to 'LogOut', destroy_user_session_path, method: :delete %></button>
+  
+  <div class="flex-1 w-32 pl-96 ">
+    <input class="srch border-orange-300" type="search" name="" placeholder="Type of text">
+    <button class="bg-slate-300 text-white rounded-lg p-0.5"><%= link_to "Search"%></button>
+  </div>
+</div>
+    <button class="bg-slate-300" >
+    <%= link_to "New " %>
+  </button>
 
 
 
+  </header>
+   <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="grid-container">
+
+<div class="flexGrid gridJustify centerColumns nopad">
+<div data-animation_name="noeffect" data-animation_delay="0" class="space_top_header_grid  half flexItem grid_sections" style="padding: 0px; border: 0px; margin: 0px; background: rgba(255,255,255, 1);animation-duration: 1s;">
+  <div class="grid_sections" style="padding: 0px 0px 0px 0px;" style_desktop="padding: 0px 0px 0px 0px;" style_mobile="padding: 4px 0px 0px 0px;">
+    <div class="contnet_grid_html grid_block_image">
+      <div class="content_grid_box overflow_hidden">
+        <img alt="" data-sizes="auto" class="lazyloadimage blur-up lazyautosizes ls-is-cached lazyloaded" src="//cdn.shopify.com/s/files/1/0108/3844/2080/files/Soin-corps.jpg?v=1649329405" data-src="//cdn.shopify.com/s/files/1/0108/3844/2080/files/Soin-corps.jpg?v=1649329405" sizes="602px">
+
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+    <div data-animation_name="noeffect" data-animation_delay="0" class="half flexItem grid_sections text-center" style="padding: 0px; border: 0px; margin: 0px;  background: rgba(83,130,124, 1);animation-duration: 1s;">
+        <div class="grid_sections" style="padding: 4px 45px 4px 20px;" style_desktop="padding: 4px 45px 4px 20px;" style_mobile="padding: 20px 20px 45px 20px;">
+            <div>
+              
+              	<h2 style="color:#ffffff; text-align:center">Nos soins corps</h2>
+              
+              
+              
+              
+          </div>
+            <div class="contnet_grid_html no_general_content" style="color: #ffffff;">            
+                    <p>Découvrez nos différents soins corps. </p><p>Gommage corps et lèvres, gel douche, lait de corps, crèmes main et pieds... </p><p>Tous nos soins sont 99% naturel. </p>
+                 
+                      <div class=" text-center bg-slate-300 p-3.5 decoration-black py-px decoration-auto inline-block text-base cursor-pointer rounded-3xl">  <button class="bg-slate-300" >
+    <%= link_to "Je découvre", products_path %>
+  </button> 
+                      </div>
+                    
+             </div>
+            
+         </div>
+    </div>
+
+
+
+      
+      </div>
+<div class="flexGrid gridJustify centerColumns nopad">
+    
+<div data-animation_name="noeffect" data-animation_delay="0" class="space_top_header_grid  half flexItem grid_sections" style="padding: 0px; border: 0px; margin: 0px; background: rgba(255,255,255, 1);animation-duration: 1s;">
+  <div class="grid_sections" style="padding: 0px 0px 0px 0px;" style_desktop="padding: 0px 0px 0px 0px;" style_mobile="padding: 4px 0px 0px 0px;">
+    <div class="contnet_grid_html grid_block_image">
+     
+      
+    </div>
+  </div>
+</div>
+
+
+    <div data-animation_name="noeffect" data-animation_delay="0" class="half flexItem grid_sections text-center" style="padding: 0px; border: 0px; margin: 0px;  background: rgba(83,130,124, 1);animation-duration: 1s;">
+        <div class="grid_sections" style="padding: 4px 45px 4px 20px;" style_desktop="padding: 4px 45px 4px 20px;" style_mobile="padding: 20px 20px 45px 20px;">
+            <div>
+              
+              	<h2 style="color:#ffffff; text-align:center">Nos soins visage</h2>
+              
+            
+          </div>
+            <div class="contnet_grid_html no_general_content" style="color: #ffffff;">            
+                    <p>Découvrez nos soins visage et nos différentes gammes. </p><p>Nos soins s'adressent à tous types de peau. .. </p><p>Lotion micellaire, crème visage, mousse nettoyante...  </p>
+                    
+                      <div class=" text-center bg-slate-300 p-3.5 decoration-black py-px decoration-auto inline-block text-base cursor-pointer rounded-3xl"><a class="button scroll_link_trigger " href="s">Je découvre</a></div>
+                    
+             </div>
+            
+         </div>
+    </div>
+
+
+      <img alt="" data-sizes="auto" class="lazyloadimage blur-up lazyautosizes ls-is-cached lazyloaded" src="//cdn.shopify.com/s/files/1/0108/3844/2080/files/Creme-visage.jpg?v=1649330067" data-src="//cdn.shopify.com/s/files/1/0108/3844/2080/files/Creme-visage.jpg?v=1649330067" sizes="602px">
+      </div>
+      </div>
+
+<br>
 
 
 <ul>
@@ -54,6 +131,9 @@ Our blog has <%= Article.public_count %> articles and counting!
                     
                       <div class="sm:mt-8 sm:text-1xl"> <%= link_to article.title, article %></div>
                       <div><%= link_to article.body, article %></div>
+                       <button class="bg-slate-300 p-3.5 decoration-black py-px decoration-auto inline-block text-base cursor-pointer rounded-3xl">
+ <%= link_to 'commander', "http://dummy.lvh.me:3001/stock/warehouses/overview", method: :get %></button>
+
                      
               
 
