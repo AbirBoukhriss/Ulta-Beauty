@@ -1,0 +1,17 @@
+<h1><%= @conseilparfum.title %></h1>
+
+<p><%= @conseilparfum.body %></p>
+
+<p>
+
+<%= image_tag(@conseilparfum.image,style:"width:200px;")if @conseilparfum.image.attached?
+%>
+</p>
+
+<ul>
+  <li><%= link_to "Edit", edit_conseilparfum_path(@conseilparfum) %></li>
+  <li><%= link_to "Destroy", conseilparfum_path(@conseilparfum), data: {
+                    method: :delete,
+                    confirm: "Are you sure?"
+                  } %></li>
+</ul>

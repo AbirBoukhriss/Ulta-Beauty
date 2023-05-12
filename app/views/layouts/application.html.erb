@@ -8,6 +8,26 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+  <div  class="bg-black h-20 text-white text-center py-20 relative">
+    <p class="text-4xl font-serif -my-4"><b>ULTRA BEAUTY</b></p>
+  </div>
+  <header class="flex">
+    <div class="flex-1 w-64 pl-98 absloute">
+      <ul class="text-red-300 m-auto w-fit flex">
+      <li class="p-2 flex items-center"><i class="material-icons">Maquillage</i> </li>
+        <li class="p-2 flex items-center"><i class="material-icons">Parfum</i><li>
+        <li class="p-2 flex items-center"><i class="material-icons">Soin visage</i></li>
+        <li class="p-2 flex items-center"><i class="material-icons">Corps et Bain</i></li>
+        <li class="p-2 flex items-center"><i class="material-icons">cheveux</i> </li>
+      </ul>
+    </div>
+    <%= link_to paniers_path do %>
+  <button><img class="m-auto h-10 w-10 mr-4" src="https://icones.pro/wp-content/uploads/2021/05/icone-de-panier-orange.png"></button><br>
+  <% end %>
+  </header>
+
   </head>
 
   <body class="h-full bg-pink-50">
@@ -15,4 +35,81 @@
    <p class ="bg-red-300 alert m-auto w-1/2"><%= alert %></p>
     <%= yield %>
   </body>
+
+
+<div class="bg-black m-20"><br>
+<h1 class="w-fit m-auto text-3xl text-white"> L'OPEN BAR <b class="text-red-600">À SERVICES</b></h1><br>
+<div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-5 w-2/3 m-auto">
+
+
+<div class="w-full rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="https://www.sephora.fr/dw/image/v2/BCVW_PRD/on/demandware.static/-/Library-Sites-SephoraV2/default/dw9756d2aa/footer/clickCollect.jpg?q=75"><br>
+ 
+      <p class="text-white text-base"><b class="text-red-600">CLICK AND COLLECT 2H </b><br>Presentez-vous <br>
+      directement a l'entrée du<br>
+      magasin a la borne Click & Collect pour récupérer<br>
+      votre commande en toute
+      simplicité.<br> <br> <br>  </p>
+    </div>
+
+<div class="w-full rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="https://www.sephora.fr/dw/image/v2/BCVW_PRD/on/demandware.static/-/Library-Sites-SephoraV2/default/dwe2e13757/footer/emballageServices.jpg?q=75"><br>
+ 
+      <p class="text-white text-base"> EMBALLAGE CADEAU<br>
+
+Choisissez un emballage<br> cadeau offert pour toute<br> commande.</p>
+    </div>
+
+
+
+    <div class="w-full rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="https://www.sephora.fr/dw/image/v2/BCVW_PRD/on/demandware.static/-/Library-Sites-SephoraV2/default/dw1dd20807/footer/Benefit%20Brow%20Bar_Sephora%20Footer_531x273.jpg?q=75"><br>
+ 
+      <p class="text-white text-base">RESERVATION DE SERVICE<br>
+
+Réservez en ligne votre <br>épilation au Bar à sourcils <br>Benefit. </p>
+    </div>
+
+
+    <div class="w-full rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="https://www.sephora.fr/dw/image/v2/BCVW_PRD/on/demandware.static/-/Library-Sites-SephoraV2/default/dwa9446843/footer/appServices.jpg?q=75"><br>
+ 
+      <p class="text-white text-base"> L'APP SEPHORA<br>
+
+Téléchargez l’application <br>Sephora pour recevoir des <br>offres exclusives !</p>
+    </div>
+
+
+    <div class="w-full rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="https://www.sephora.fr/dw/image/v2/BCVW_PRD/on/demandware.static/-/Library-Sites-SephoraV2/default/dw45442afa/footer/coursierServices.jpg?q=75"><br>
+ 
+      <p class="text-white text-base">LIVRAISON EXPRESS PAR COURSIER<br>
+
+Profitez de la livraison<br> express par coursier et <br>faites vous livrer à l’heure<br> qui vous arrange. </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+  </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+<br> <br> 
 </html>

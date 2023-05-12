@@ -1,7 +1,5 @@
 class ArticlesController < ApplicationController
 
-
-  
   def index
     @articles = Article.all
   end
@@ -10,9 +8,6 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
   
-  def products
-  end
-
   def new
     @article = Article.new
   end
@@ -31,6 +26,7 @@ class ArticlesController < ApplicationController
   def edit
     @article = Article.find(params[:id])
   end
+ 
 
   def update
     @article = Article.find(params[:id])

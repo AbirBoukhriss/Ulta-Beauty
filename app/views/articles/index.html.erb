@@ -1,152 +1,114 @@
-  <div  class="bg-black h-48 text-white text-center py-20">
-  <p class="text-4xl"><b>ABIIROSE</b></p>
-  </div>
-<header class="flex ">
-  <div class="flex-1 w-64 pl-96 ">
-    <ul class="text-red-300 flex">
- 
-     <li class="p-2 flex items-center"><i class="material-icons">Acceuil</i> </li>
-      <li class="p-2 flex items-center"><i class="material-icons">Nos Produits</i><li>
-      <li class="p-2 flex items-center"><i class="material-icons">Nos Gammes</i></li>
-      <li class="p-2 flex items-center"><i class="material-icons">Type de soin</i></li>
-      <li class="p-2 flex items-center"><i class="material-icons">Nos Offres</i> </li>
-    </ul>
-  </div>
-     <button class="bg-slate-300" >
+
+
+  <button class="bg-slate-300" >
     <%= link_to "New Article", new_article_path %>
   </button>
-
-
-
-  </div>
-  <button class="bg-slate-300 p-3.5 decoration-black py-px decoration-auto inline-block text-base cursor-pointer rounded-3xl">
- <%= link_to 'LogOut', destroy_user_session_path, method: :delete %></button>
   
-  <div class="flex-1 w-32 pl-96 ">
-    <input class="srch border-orange-300" type="search" name="" placeholder="Type of text">
-    <button class="bg-slate-300 text-white rounded-lg p-0.5"><%= link_to "Search"%></button>
-  </div>
-</div>
-    <button class="bg-slate-300" >
-    <%= link_to "New " %>
+  <button class="bg-slate-300 p-3.5 decoration-black py-px decoration-auto inline-block text-base cursor-pointer rounded-3xl">
+    <%= link_to 'LogOut', destroy_user_session_path, method: :delete %>
   </button>
+  
+</header>
 
-
-
-  </header>
-   <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="grid-container">
-
-<div class="flexGrid gridJustify centerColumns nopad">
-<div data-animation_name="noeffect" data-animation_delay="0" class="space_top_header_grid  half flexItem grid_sections" style="padding: 0px; border: 0px; margin: 0px; background: rgba(255,255,255, 1);animation-duration: 1s;">
-  <div class="grid_sections" style="padding: 0px 0px 0px 0px;" style_desktop="padding: 0px 0px 0px 0px;" style_mobile="padding: 4px 0px 0px 0px;">
-    <div class="contnet_grid_html grid_block_image">
-      <div class="content_grid_box overflow_hidden">
-        <img alt="" data-sizes="auto" class="lazyloadimage blur-up lazyautosizes ls-is-cached lazyloaded" src="//cdn.shopify.com/s/files/1/0108/3844/2080/files/Soin-corps.jpg?v=1649329405" data-src="//cdn.shopify.com/s/files/1/0108/3844/2080/files/Soin-corps.jpg?v=1649329405" sizes="602px">
-
-      </div>
-
-      
-    </div>
+<div class="ml-50"> 
+  <div class="w-fit m-auto overflow_hidden">
+    <img alt="" data-sizes="auto" class="lazyloadimage blur-up lazyautosizes ls-is-cached lazyloaded" src="https://www.nocibe.fr/fstrz/r/s/www.nocibe.fr/wp-content/uploads/2022/05/TETIERE2-1-1024x170.png?frz-v=5030" >
   </div>
-</div>
-
-
-    <div data-animation_name="noeffect" data-animation_delay="0" class="half flexItem grid_sections text-center" style="padding: 0px; border: 0px; margin: 0px;  background: rgba(83,130,124, 1);animation-duration: 1s;">
-        <div class="grid_sections" style="padding: 4px 45px 4px 20px;" style_desktop="padding: 4px 45px 4px 20px;" style_mobile="padding: 20px 20px 45px 20px;">
-            <div>
-              
-              	<h2 style="color:#ffffff; text-align:center">Nos soins corps</h2>
-              
-              
-              
-              
-          </div>
-            <div class="contnet_grid_html no_general_content" style="color: #ffffff;">            
-                    <p>Découvrez nos différents soins corps. </p><p>Gommage corps et lèvres, gel douche, lait de corps, crèmes main et pieds... </p><p>Tous nos soins sont 99% naturel. </p>
-                 
-                      <div class=" text-center bg-slate-300 p-3.5 decoration-black py-px decoration-auto inline-block text-base cursor-pointer rounded-3xl">  <button class="bg-slate-300" >
-    <%= link_to "Je découvre", products_path %>
-  </button> 
-                      </div>
-                    
-             </div>
-            
-         </div>
-    </div>
-
-
-
-      
-      </div>
-<div class="flexGrid gridJustify centerColumns nopad">
-    
-<div data-animation_name="noeffect" data-animation_delay="0" class="space_top_header_grid  half flexItem grid_sections" style="padding: 0px; border: 0px; margin: 0px; background: rgba(255,255,255, 1);animation-duration: 1s;">
-  <div class="grid_sections" style="padding: 0px 0px 0px 0px;" style_desktop="padding: 0px 0px 0px 0px;" style_mobile="padding: 4px 0px 0px 0px;">
-    <div class="contnet_grid_html grid_block_image">
-     
-      
-    </div>
-  </div>
-</div>
-
-
-    <div data-animation_name="noeffect" data-animation_delay="0" class="half flexItem grid_sections text-center" style="padding: 0px; border: 0px; margin: 0px;  background: rgba(83,130,124, 1);animation-duration: 1s;">
-        <div class="grid_sections" style="padding: 4px 45px 4px 20px;" style_desktop="padding: 4px 45px 4px 20px;" style_mobile="padding: 20px 20px 45px 20px;">
-            <div>
-              
-              	<h2 style="color:#ffffff; text-align:center">Nos soins visage</h2>
-              
-            
-          </div>
-            <div class="contnet_grid_html no_general_content" style="color: #ffffff;">            
-                    <p>Découvrez nos soins visage et nos différentes gammes. </p><p>Nos soins s'adressent à tous types de peau. .. </p><p>Lotion micellaire, crème visage, mousse nettoyante...  </p>
-                    
-                      <div class=" text-center bg-slate-300 p-3.5 decoration-black py-px decoration-auto inline-block text-base cursor-pointer rounded-3xl"><a class="button scroll_link_trigger " href="s">Je découvre</a></div>
-                    
-             </div>
-            
-         </div>
-    </div>
-
-
-      <img alt="" data-sizes="auto" class="lazyloadimage blur-up lazyautosizes ls-is-cached lazyloaded" src="//cdn.shopify.com/s/files/1/0108/3844/2080/files/Creme-visage.jpg?v=1649330067" data-src="//cdn.shopify.com/s/files/1/0108/3844/2080/files/Creme-visage.jpg?v=1649330067" sizes="602px">
-      </div>
-      </div>
-
 <br>
-
-
-<ul>
-
- <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4  ">
-          <% @articles.each do |article| %>
-            <% unless article.archived? %>
-                <div class="drop-shadow-2xl   w-full rounded overflow-hidden shadow-lg text-center ">
-                
-                
-                  
-                      <div class="w-full items-center h-72 bg-center bg-cover max-w-md mx-auto sm:mt-8 sm:h-64" style="background-image: url('<%= url_for(article.image) if article.image.attached? %>')">
-              </div>             
-                    
-                    
-                      <div class="sm:mt-8 sm:text-1xl"> <%= link_to article.title, article %></div>
-                      <div><%= link_to article.body, article %></div>
-                       <button class="bg-slate-300 p-3.5 decoration-black py-px decoration-auto inline-block text-base cursor-pointer rounded-3xl">
- <%= link_to 'commander', "http://dummy.lvh.me:3001/stock/warehouses/overview", method: :get %></button>
-
-                     
-              
-
-                </div>
-             <% end %>
-          <% end %>
- 
+  <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 w-fit m-auto">
+  <div class="content_grid_box overflow_hidden ">
+  <%= link_to conseilsoins_path do %>
+    <button> <img class="wp-image-11384 rounded-full" src="https://www.nocibe.fr/fstrz/r/s/www.nocibe.fr/wp-content/uploads/2022/05/VIGNETTESOIN.png?frz-v=5030">
+    <p class="w-fit m-auto " >conseils soin </button> </p>
+  <% end %>
+  </div>
+  <div class="content_grid_box overflow_hidden">
+   <%= link_to conseilmakeups_path do %>
+    <button><img class="wp-image-11384 rounded-full" src="https://www.nocibe.fr/fstrz/r/s/www.nocibe.fr/wp-content/uploads/2022/05/MAKEUPCAT-3.png?frz-v=5030">
+    <p class="w-fit m-auto">Conseils make-up </button></p>
+     <% end %>
+  </div>
+  <div class="content_grid_box overflow_hidden">
+  <%= link_to conseilparfums_path do %>
+    <button><img class="wp-image-11384 rounded-full" src="https://www.nocibe.fr/fstrz/r/s/www.nocibe.fr/wp-content/uploads/2022/05/PARFUMCAT-3.png?frz-v=5030">
+    <p class="w-fit m-auto">Conseils Parfum </button></p>
+    <% end %>
+  </div>
+  <div class="content_grid_box overflow_hidden">
+  <%= link_to conseilcapillaires_path do %>
+    <button><img class="wp-image-11384 rounded-full" src="https://www.nocibe.fr/fstrz/r/s/www.nocibe.fr/wp-content/uploads/2022/05/CAPILLAIRECAT-3.png?frz-v=5030">
+    <p class="w-fit m-auto">Conseils Capillaire</button></p>
+    <% end %>
+  </div>
+  </div>
+  <br>
 </div>
+<div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 w-2/3 m-auto">
+<div class="w-full rounded overflow-hidden shadow-lg">
+  <img class="w-full " src="https://static.sephora.fr/www/webmaster/mothers-day-2023-master-studio/moz-01-DN.jpg">
+  <div class="px-6 py-4 bg-rose-300 hover:bg-rose-200">
+    <div class="font-bold text-xl mb-2 text-center "><button> <%= link_to "cadeaux Parfum", parfums_path %></button> </div>
+      <p class="text-gray-700 text-base"> </p>
+    </div>
+  </div>
+  <div class="w-full rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="https://static.sephora.fr/www/webmaster/mothers-day-2023-master-studio/moz-02-DN.jpg">
+  <div class="px-6 py-4 bg-rose-300 hover:bg-rose-200">
+    <div class="font-bold text-xl mb-2 text-center "> <button> <%= link_to "cadeaux Maquillage", maquillages_path %></button> </div>
+      <p class="text-gray-700 text-base"> </p>
+    </div>
+  </div>
+  <div class="w-full rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="https://static.sephora.fr/www/webmaster/mothers-day-2023-master-studio/moz-03-DN.jpg">
+  <div class="px-6 py-4 bg-rose-300 hover:bg-rose-200">
+    <div class="font-bold text-xl mb-2 text-center "> <button>  <%= link_to "cadeaux soin visage", soinvisages_path %> </button> </div>
+      <p class="text-gray-700 text-base"> </p>
+    </div>
+  </div>
+  <div class="w-full rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="https://static.sephora.fr/www/webmaster/mothers-day-2023-master-studio/moz-04-DN.jpg">
+  <div class="px-6 py-4 bg-rose-300 hover:bg-rose-200">
+    <div class="font-bold text-xl mb-2 text-center "><button> <%= link_to "cadeaux soin cheveux",soincheveus_path %>  </button> </div>
+      <p class="text-gray-700 text-base"> </p>
+    </div>
+  </div>
+  <div class="w-full rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="https://static.sephora.fr/www/webmaster/mothers-day-2023-master-studio/moz-05-DN.jpg">
+  <div class="px-6 py-4 bg-rose-300 hover:bg-rose-200">
+    <div class="font-bold text-xl mb-2 text-center "><button>  <%= link_to "cadeaux corps et bains" ,corpsetbains_path %> </button> </div>
+      <p class="text-gray-700 text-base"> </p>
+    </div>
+  </div>
+  <div class="w-full rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="https://www.sephora.fr/dw/image/v2/BCVW_PRD/on/demandware.static/-/Library-Sites-SephoraV2/default/dwe78b4e1d/LP/Mother%20Day/moz-06-M.jpg">
+  <div class="px-6 py-4 bg-rose-300 hover:bg-rose-200">
+    <div class="font-bold text-xl mb-2 text-center "><button><%= link_to" Parfum premium" ,premiums_path %> </button></div>
+      <p class="text-gray-700 text-base"> </p> 
+    </div>
+  </div>
+</div><br>
+<p class="w-fit m-auto text-4xl">Nos selection cadeaux  <b class="text-red-300">par prix</b></p><br>
 
+<div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 w-2/3 m-auto">
+<div class="px-6 py-4 bg">
 
-</ul>
-
-
-
-
-
+    <div class="font-bold text-xl mb-2 text-center  "><button class=" relative "> <%= link_to moins_path do %><img class="w-full absolute " src="https://static.sephora.fr/www/webmaster/mothers-day-2023-master-studio/bg-btn-01-D.png"> <p class=""> Moins de 30$ gghg<p></button> </div>
+      <p class="text-gray-700 text-base"> </p>
+      <% end %>
+    </div>
+    <div class="px-6 py-4 bg">
+    
+    <div class="font-bold text-xl mb-2 text-center "><button class=" relative"> <img class="w-full absolute" src="https://static.sephora.fr/www/webmaster/mothers-day-2023-master-studio/bg-btn-01-D.png"> <p class=""> Entre 30 et 80$<p></button> </div>
+      <p class="text-gray-700 text-base"> </p>
+      
+      
+    </div>
+    <div class="px-6 py-4 bg">
+     
+    <div class="font-bold text-xl mb-2 text-center "><button class=" relative"> <img class="w-full absolute" src="https://static.sephora.fr/www/webmaster/mothers-day-2023-master-studio/bg-btn-01-D.png"> <p class=""> Plus de 80$ gggg<p></button> </div>
+      <p class="text-gray-700 text-base"> </p>
+      
+       
+    </div>
+</div>
+<br>

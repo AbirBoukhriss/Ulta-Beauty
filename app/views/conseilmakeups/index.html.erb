@@ -1,0 +1,45 @@
+ <button class="bg-slate-300" >
+    <%= link_to "New ConseilMakeup", new_conseilmakeup_path %>
+  </button>
+  <button class="bg-slate-300 p-3.5 decoration-black py-px decoration-auto inline-block text-base cursor-pointer rounded-3xl">
+    <%= link_to 'LogOut', destroy_user_session_path, method: :delete %>
+  </button>
+
+
+
+
+
+
+
+
+
+<ul>
+
+
+ <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4  ">
+          <% @conseilmakeups.each do |conseilmakeups| %>
+
+                <div class="drop-shadow-2xl   w-full rounded overflow-hidden shadow-lg text-center ">
+                
+                
+                  
+                      <div class="w-full items-center h-72 bg-center bg-cover max-w-md mx-auto sm:mt-8 sm:h-64" style="background-image: url('<%= url_for(conseilmakeups.image) if conseilmakeups.image.attached? %>')">
+              </div>             
+                    
+                    
+                      <div class="sm:mt-8 sm:text-1xl"> <%= link_to conseilmakeups.title, conseilmakeups %></div>
+                      <div><%= link_to conseilmakeups.body, conseilmakeups %></div>
+                       <button class="bg-slate-300 p-3.5 decoration-black py-px decoration-auto inline-block text-base cursor-pointer rounded-3xl">
+ <%= link_to 'ajouter au panier' , "http://dummy.lvh.me:3000/stock/warehouses/overview", method: :get %></button><br> <br>
+
+                     
+              
+
+                </div>
+
+          <% end %>
+ 
+</div>
+
+
+</ul>

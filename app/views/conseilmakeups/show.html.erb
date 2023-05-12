@@ -1,0 +1,17 @@
+<h1><%= @conseilmakeup.title %></h1>
+
+<p><%= @conseilmakeup.body %></p>
+
+<p>
+
+<%= image_tag(@conseilmakeup.image,style:"width:200px;")if @conseilmakeup.image.attached?
+%>
+</p>
+
+<ul>
+  <li><%= link_to "Edit", edit_conseilmakeup_path(@conseilmakeup) %></li>
+  <li><%= link_to "Destroy", conseilmakeup_path(@conseilmakeup), data: {
+                    method: :delete,
+                    confirm: "Are you sure?"
+                  } %></li>
+</ul>
